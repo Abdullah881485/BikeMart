@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BikeMart - Next.js Bike Marketplace
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+BikeMart is a simple, responsive bike marketplace built with **Next.js (App Router)** and **NextAuth.js** for authentication. Users can browse bikes, view details, and add/manage products after logging in. The app includes a polished UI with a responsive layout, search functionality, and protected routes.
+
+---
+
+## Features
+
+- Public pages: Landing, Login/Register, Item List, Item Details
+- Protected pages: Add Product, Manage Products (requires login)
+- Authentication with email/password and Google (NextAuth.js)
+- Responsive design for mobile, tablet, and desktop
+- Product search and filter (UI only)
+- Professional UI with cards, hover/focus effects, and clean forms
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js (App Router), Tailwind CSS
+- **Authentication:** NextAuth.js
+- **Backend:** Express.js (simple API for products)
+- **Database:** MongoDB
+
+---
+
+## Setup & Installation
+
+1. **Clone the repository**
+
+````bash
+git clone https://github.com/Abdulah881485/bikemart.git
+cd bikemart
+
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+````
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Route                   | Description                              | Access    |
+| ----------------------- | ---------------------------------------- | --------- |
+| `/`                     | Landing page with hero, features, footer | Public    |
+| `/login`                | Login/Register page with social login    | Public    |
+| `/products`             | List of all bikes with search/filter     | Public    |
+| `/products/[productId]` | Product details page                     | Public    |
+| `/add-product`          | Form to add a bike                       | Protected |
+| `/manage-products`      | Manage (view/delete) bikes               | Protected |
