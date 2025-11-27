@@ -34,7 +34,7 @@ export default function Page() {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/products")
+    fetch("https://bikemart-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setBikes(data))
       .catch((err) => console.error(err))

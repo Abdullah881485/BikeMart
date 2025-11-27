@@ -11,7 +11,7 @@ export default function page() {
   const { user } = useAuth();
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/products")
+    fetch("https://bikemart-server.vercel.app/products")
       .then((res) => {
         return res.json();
       })
