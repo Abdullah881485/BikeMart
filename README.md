@@ -30,15 +30,15 @@ BikeMart is a simple, responsive bike marketplace built with **Next.js (App Rout
 
 1. **Clone the repository**
 
-````bash
+```bash
 git clone https://github.com/Abdulah881485/bikemart.git
 cd bikemart
 
 
-```bash
+
 npm install
 npm run dev
-````
+```
 
 | Route                   | Description                              | Access    |
 | ----------------------- | ---------------------------------------- | --------- |
