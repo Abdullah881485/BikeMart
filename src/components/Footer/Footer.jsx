@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.1)] text-gray-700 pt-14 pb-8 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="w-9/10 md:w-8/10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">

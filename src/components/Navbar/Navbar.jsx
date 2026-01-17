@@ -56,8 +56,8 @@ export default function Navbar() {
     return <Loader></Loader>;
   }
   return (
-    <div className="bg-base-100 shadow-sm">
-      <div className="navbar w-full md:w-9/10 mx-auto">
+    <nav className="bg-base-100 shadow-sm sticky top-0 z-50">
+      <div className="navbar w-full md:w-8/10 mx-auto">
         <div className="navbar-start">
           <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,7 +72,7 @@ export default function Navbar() {
               {links}
             </ul>
           </div>
-          <a className=" font-bold text-xl md:text-2xl">
+          <a className=" font-extrabold text-xl md:text-3xl">
             Bike<span className="text-[#3863da]">Mart</span>{" "}
           </a>
         </div>
@@ -83,17 +83,13 @@ export default function Navbar() {
           {user?.email ? (
             <div className="flex items-center gap-3">
               <Link
-                href="/myProfile"
+                href="/"
                 title={user && user.displayName}
                 className="rounded-full bg-gray-300 cursor-pointer hover:shadow-xl"
               >
                 <img
-                  className=" w-7 md:w-10 rounded-full"
-                  src={`${
-                    user
-                      ? `${user.photoURL}`
-                      : "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg"
-                  }`}
+                  className=" w-7 h-7 md:w-11 md:h-11 rounded-full"
+                  src="https://tse3.mm.bing.net/th/id/OIP.lQPIOurzDIsom6yf0VA7dwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
                   alt="User Profile"
                 />
               </Link>
@@ -128,6 +124,6 @@ export default function Navbar() {
           )}
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

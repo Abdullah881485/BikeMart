@@ -1,43 +1,66 @@
 const features = [
   {
-    title: "Quality Bikes",
-    desc: "We only sell top-quality bikes from trusted brands.",
+    title: "Premium Quality Bikes",
+    desc: "We offer only carefully selected bikes from trusted and proven brands.",
     icon: "🚴‍♂️",
   },
   {
-    title: "Affordable Prices",
-    desc: "Competitive pricing without compromising quality.",
+    title: "Best Value Pricing",
+    desc: "Transparent and competitive prices without compromising on quality.",
     icon: "💰",
   },
   {
-    title: "Fast Delivery",
-    desc: "Get your bike delivered quickly and safely.",
+    title: "Fast & Secure Delivery",
+    desc: "Your bike arrives safely and on time, right at your doorstep.",
     icon: "🚚",
   },
   {
-    title: "24/7 Support",
-    desc: "Our team is here to help anytime you need.",
+    title: "24/7 Customer Support",
+    desc: "Our support team is always ready to assist you whenever needed.",
     icon: "🛠️",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className=" w-9/10 mx-auto py-16 px-4 text-center">
-      <h2 className="text-3xl font-bold mb-8">Why Choose Us</h2>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-        {features.map((f, i) => (
-          <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            key={i}
-            className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition"
-          >
-            <div className="text-4xl mb-4">{f.icon}</div>
-            <h3 className="font-semibold text-xl mb-2">{f.title}</h3>
-            <p className="text-gray-600">{f.desc}</p>
-          </div>
-        ))}
+    <section className="py-20 bg-gray-50">
+      <div className="w-9/10 md:w-8/10 mx-auto text-center">
+        {/* Section Header */}
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-gray-900"
+        >
+          Why Choose <span className="text-blue-600">BikeMart</span>
+        </h2>
+
+        <p
+          data-aos="fade-up"
+          data-aos-delay="120"
+          className="mt-4 text-gray-600 max-w-2xl mx-auto"
+        >
+          We combine quality, affordability, and reliable service to give you
+          the best biking experience possible.
+        </p>
+
+        {/* Cards */}
+        <div className="grid gap-8 mt-12 md:grid-cols-2 lg:grid-cols-4">
+          {features.map((f, i) => (
+            <div
+              key={i}
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+              className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="text-5xl mb-5">{f.icon}</div>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {f.title}
+              </h3>
+
+              <p className="text-gray-600 text-sm leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

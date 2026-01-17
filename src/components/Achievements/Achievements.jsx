@@ -1,50 +1,61 @@
 export default function Achievements() {
   return (
-    <section className="py-16 ">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Our Achievements
+    <section className="py-20 bg-gray-50">
+      <div className="w-9/10 md:w-8/10 mx-auto">
+        {/* Header */}
+        <div data-aos="fade-up" className="text-center max-w-2xl mx-auto mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            Our <span className="text-blue-600">Achievements</span>
           </h2>
-          <p className="text-gray-600 mt-2">
-            Some highlights that show our journey and impact.
+          <p className="text-gray-600 mt-3">
+            Milestones that reflect our growth, trust, and commitment to riders.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Card 1 */}
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center md:text-start"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+            className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
           >
-            <h3 className="text-4xl font-bold text-blue-600">120+</h3>
-            <p className="mt-2 text-gray-700 font-semibold">Products Listed</p>
-            <p className="text-gray-500 text-sm mt-1">
-              Wide range of top-quality bikes and accessories.
+            <h3 className="text-5xl font-extrabold text-blue-600">120+</h3>
+            <p className="mt-3 text-lg font-semibold text-gray-900">
+              Products Listed
+            </p>
+            <p className="text-gray-600 text-sm mt-2">
+              A diverse collection of high-quality bikes and accessories.
             </p>
           </div>
 
+          {/* Card 2 */}
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center md:text-start"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+            className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
           >
-            <h3 className="text-4xl font-bold text-blue-600">4.8★</h3>
-            <p className="mt-2 text-gray-700 font-semibold">Customer Rating</p>
-            <p className="text-gray-500 text-sm mt-1">
-              Consistently rated high by satisfied buyers.
+            <h3 className="text-5xl font-extrabold text-blue-600">4.8★</h3>
+            <p className="mt-3 text-lg font-semibold text-gray-900">
+              Customer Rating
+            </p>
+            <p className="text-gray-600 text-sm mt-2">
+              Highly rated by riders for quality and service.
             </p>
           </div>
 
+          {/* Card 3 */}
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center md:text-start"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
           >
-            <h3 className="text-4xl font-bold text-blue-600">8+</h3>
-            <p className="mt-2 text-gray-700 font-semibold">Years of Trust</p>
-            <p className="text-gray-500 text-sm mt-1">
-              Building trust with reliable service since day one.
+            <h3 className="text-5xl font-extrabold text-blue-600">8+</h3>
+            <p className="mt-3 text-lg font-semibold text-gray-900">
+              Years of Trust
+            </p>
+            <p className="text-gray-600 text-sm mt-2">
+              Delivering reliability and customer satisfaction since day one.
             </p>
           </div>
         </div>
